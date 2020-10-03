@@ -8,12 +8,20 @@
   <meta content="description" name="description">
   <meta name="google" content="notranslate" />
   <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
   
-  <title>Home Page</title>  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+  
+  <title>Script and Video</title>  
 
 <link href="./main.3da94fde.css" rel="stylesheet"></head>
 
 <body>
+
+<!-- Add your content of header -->
 
 <header>
   <nav class="navbar navbar-fixed-top navbar-default">
@@ -33,33 +41,30 @@
           <li><a href="./script-page.html" title="">Script and Video</a></li>
         </ul>
       </nav> 
+    
     </div>
   </nav>
 </header>
-
-  
-<div class="hero-full-container background-image-container white-text-container" style="background-image:url('https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/59523569_10158450303061258_4921732418966126592_o.jpg?_nc_cat=105&_nc_sid=730e14&_nc_ohc=VtZl-m0QeesAX84wIJH&_nc_oc=AQm0fuHuvQRivtvAof07pZplPJ8gmmywBq4XLWiEYhKetX7oBVlxwuUDcJfXcxHRXp5Qgl10GlmsfIUCxqDct8-s&_nc_ht=scontent-sjc3-1.xx&oh=f2fdcf016112588818c16abcef2ffd0b&oe=5F9BCB9F')">
-  <div class="overlay-gradient"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-7 col-md-offset-1">
-        <div class="hero-full-wrapper">
-          <div class="text-content">
-            <h1>Hi, I'm Stephen</h1>
-            <p><b>Welcome to my online portfolio.</b></p>
-          </div>
+<div class="section-container content-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-md-6">
+                    <h1 class="h2">Simple Script</h1>
+                    <p>Click the button to get an alert.</p>
+                    <script type="text/javascript">
+                      var clicks = 0;
+                      function onClick() {
+                        alert('The button has been clicked')
+                      };
+                    </script>
+                  <button type="button" onClick="onClick()">Click me</button>
+                </div>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    navbarFixedTopAnimation();
-    closeMenuBeforeGoingToPage();
-  });
-</script>
 
 
 
